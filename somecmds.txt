@@ -3,6 +3,8 @@ ssh-add -K /Users/micelwhave/.ssh/id_rsa_github
 ssh-add -l git@github.com
 ssh -vT git@github.com
 git init
+git config --global user.name "microwave89-hv"
+git config --global user.email "username@email.tld"
 echo "*.o">>.gitignore
 echo "*.efi">>.gitignore
 git status
