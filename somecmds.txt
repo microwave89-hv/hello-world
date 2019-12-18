@@ -1,0 +1,12 @@
+eval "$(ssh-agent -s)"
+ssh-add -K /Users/micelwhave/.ssh/id_rsa_github
+ssh-add -l git@github.com
+ssh -vT git@github.com
+git init
+echo "*.o">>.gitignore
+echo "*.efi">>.gitignore
+git status
+git add --all .
+git commit -m "commit msg"
+git pull --allow-unrelated-histories https://www.github.com/microwave89-hv/hello-world.git master
+git push -u origin master
