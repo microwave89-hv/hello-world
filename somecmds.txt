@@ -12,3 +12,6 @@ git add --all .
 git commit -m "commit msg"
 git pull --allow-unrelated-histories https://www.github.com/microwave89-hv/hello-world.git master
 git push -u origin master
+git log  # top = newest
+git checkout <file> # reset local modifications
+git reset --hard HEAD~ # revert last commit
